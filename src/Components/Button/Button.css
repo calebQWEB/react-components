@@ -1,0 +1,35 @@
+button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    position: relative;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+}
+
+button:hover .cover {
+    width: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: -1;
+}
+
+button:hover {
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 500px) {
+    button {
+        font-size: 1rem;
+    }
+}

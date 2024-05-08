@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navLinks-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.navLinks-container li {
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navLinks-container {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}

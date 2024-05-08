@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f4c81;
+    padding: 2rem 1rem;
+
+    position: relative;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.link-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link-container li {
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .link-container {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}

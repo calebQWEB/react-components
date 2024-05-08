@@ -1,0 +1,21 @@
+main {
+    padding: 2rem;
+}
+
+.card-main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .card-main {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card-main {
+        grid-template-columns: repeat(1, auto);
+    }
+}

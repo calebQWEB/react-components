@@ -1,0 +1,46 @@
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.page-not-found {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.error-message {
+    font-size: 1.125rem;
+    width: 60ch;
+    margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .error-code {
+        font-size: 2.5rem;
+    }
+    
+    .page-not-found {
+        font-size: 1rem;
+    }
+    
+    .error-message {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .error-message {
+        width: 100%;
+    }
+}
+
